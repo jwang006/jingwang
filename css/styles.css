@@ -8,129 +8,187 @@ body{
 h1{
   font-size: 30px;
 }
-
+h4{
+  background-color: #ffffff;
+}
 p{
   font-size: 16px;
 }
 
+
+main,
 header{
-  padding:0 3%;
+    width:100%;
+    max-width:1400px; /* means it won't be larger than 1200px on larger screens */
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 3%;
 }
 
-main{
-  width:100%;
-  max-width:1400px; /* means it won't be larger than 1200px on larger screens */
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 3%;
+nav{
+    padding:10px 3%;
 }
 
-footer{
-  width:100%;
-  min-height:100px;
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color: grey;
 }
 
+.center-text{
+    text-align: center;
+}
 
-/* Flex layouts are one of the easier ways to style responsive layouts that work on all devices */
-/* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox */
+img{
+    width: 100%;
+}
 
+a.hover{
+  color: red;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+/* invert images*/
 .flex-container{
   display: flex; /* all children will now be flex items */
   flex-direction: row; /* other option is column */
   flex-wrap: wrap; /* means the children will wrap to a new line */
 }
 
-/* make each 5 charactors in same line */
 
-/* set the a tag no styles */
-/* 
-a {
-  display: inline-block; 
-  font-family:sans-serif;
-  text-decoration: none;
-  color:black;
-  font-size: 20px;
-  margin-right: 10px; 
-
-}
-.name{
-  color:rgb(0, 255, 217);
-  margin-right: 20px;  
-  margin: 10 ;
-} */
-
-
-/* Pen-specific styles */
-* {
-  box-sizing: border-box;
-}
-body {
-  font-size: 1.25rem;
-  font-family: sans-serif;
-  text-shadow: 0 2px 2px #b6701e;
+.flex-item-Ants{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
 }
 
-/* section {
-  color: #fff;
+.flex-item-Ants{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-Ants a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/ants_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-}
-
-div {
-  height: 100%;
-} */
-.introduction {
-  display: flex; 
-  margin-left: 100px; 
-  padding-top: 5%;
-}
-.introduction p {
-  display: inline-block; 
-  font-family: sans-serif;
-  font-size: 1rem;
-  margin-right: 30px; 
-}
-/*cannot work*/
-a.hover{
-  color: red;
-}
-a.active {
-  background: red;
-}
-
-a {
   text-decoration: none;
-  color:black;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
-/* .name h1 {
-  display: flex; 
-  font-family: sans-serif;
-  margin-left: 400px; 
-} */
 
-/* Pattern styles */
-.container {
-  display: table;
+.flex-item-Ants a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+.flex-item-HandleMe{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-HandleMe{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-HandleMe a{
+  display: flex;
   width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/handleMe_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
 
-.left-half {
-  background-color: #ffffff;
-  position: absolute;
-  left: 0px;
-  width: 50%;
+.flex-item-HandleMe a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
 }
 
-.right-half {
-  background-color: #ffffff;
-  position: absolute;
-  right: 0px;
-  width: 50%;
+
+
+
+.flex-item{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
 }
 
-#sketch-container{
-  position: initial;
+.flex-item a{
+  display: flex;
   width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/lightgrey-line.jpeg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
 }
+
+.flex-item a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+.flex-basis-third .flex-item{
+  flex-basis: 33.33%; 
+}
+
+.flex-basis-half .flex-item{
+  flex-basis: 50%; 
+}
+
 /* Media Queries for responsive design */
 
 /* Un-comment the body background-colors to see bold debug color change between screen sizes */

@@ -345,6 +345,157 @@ a {
 
 
 
+.flex-item-water{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-water{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-water a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/water.png); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-water a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+.flex-item-sound{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-sound{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-sound a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/sound_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-sound a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+.flex-item-heal{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-heal{
+  display: flex;
+  /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 25%; /*width of the box, take up a quarter of the parent's size*/
+  box-sizing: border-box; /*this means that we can add padding, line below, and still only take 25% width of parent*/
+  padding: 5px;
+}
+
+.flex-item-heal a{
+  display: flex;
+  width: 100%;
+  height: 0;
+  padding: 30% 0;
+  background-image: url(../assets/images/healing_cover.jpg); /*change the image to one of you choice */
+  background-position: center;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color:#4f4f4f;
+  transition: all 0.2s; /* CSS transitions https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions */
+}
+
+.flex-item-heal a:hover{
+  color:#bbbbbb;
+  background-size: 120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .flex-item{
   display: flex;
   /* the following three items can be put on one line: https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
